@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @if (User.IsInRole("Experienced")) {
+        <a href="https://www.bairesdev.com/wp-content/uploads/2021/07/Csharp.svg">Image link.</a>
+    }
+    else if (User.IsInRole("OldTimer")) {
+        <img class="img-fluid w-25 h-25" alt="" src="https://www.bairesdev.com/wp-content/uploads/2021/07/Csharp.svg"/>
+    }
+    else {
+        <p>There is nothing here.</p>
+    }
+</div>

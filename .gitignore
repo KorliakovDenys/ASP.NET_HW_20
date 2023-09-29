@@ -1,0 +1,6 @@
+.idea
+ASP.NET_HW_20/bin
+ASP.NET_HW_20/obj
+ASP.NET_HW_20/app.db-wal
+ASP.NET_HW_20/app.db-shm
+*.txt
